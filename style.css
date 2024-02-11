@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+fieldset{
+    background-color: aliceblue;
+    padding: 15px;
+    margin-left: 2px;
+    border: none;
+}
+
+body{
+background-color: #92cff8f1;
+
+}
+
+
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+ }
+
+ a:hover{
+    opacity: 0.7;
+    color:#ffffff;
+    
+}
+
+
+.logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient( to  top,#38B0FF 10%,#E7EBEE);
+    height: 15vh;
+    
+}
+
+.nav-list{
+list-style: none;
+display: flex;
+
+
+}
+
+.nav-list li{
+letter-spacing: 3px ;
+margin-left: 120px; 
+margin-bottom: -25px;
+margin-right: 20px;
+}
+
+.conteudo{
+background: url("IMAGENS/papelFundoLogoInicial.jpg") no-repeat center center ;
+background-size: cover;
+height: 40vh;
+margin-top: 20px;
+margin-left: 30px;
+margin-right: 30px;
+text-align: center;
+color: #E7EBEE;
+font-size: 20px;
+}
+
+.conteudo p{
+    margin: -25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+h2{
+position: relative;
+text-align: center;
+font-size: 30px;
+color: #E7EBEE;
+top: 20px;
+}
+
+#search{
+height: 5vh;
+margin: 5vh;
+width: 100vh;
+
+}
+
+
+.conteudo2{
+    background-color: #ffffff;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+   justify-content: space-between;
+   
+}
+
+.conteudo2 p{
+margin: 20px;
+line-height: 1.5;
+
+}
+
+
+/* Menu responsivo, classe responsavel mobile.menu */
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+    
+    }
+    
+ .mobile-menu div{
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        margin: 6px;
+        transition: 0.3s;
+ }
+
+
+ @media(max-width:999px ) {
+
+  h2{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    top: 20px;
+
+    }
+    .conteudo p{
+      margin: 19px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+    
+#search{
+  height: 5vh;
+  margin: 5vh;
+  width: 50vh;
+  
+  }
+
+
+    body{
+      overflow: hidden;
+  
+    }  
+  .nav-list{
+      position: absolute;
+      top: 16vh;
+      right: 0;
+      width:38vw;
+      height:80vh;
+      background-color:#05eaf2b7;
+      flex-direction: column;
+      align-items: center;
+    justify-content: space-around;
+
+      border: solid #ffffff;
+      transform: translateX(100%);
+      transition:  0.3s ease-in;
+      border: none;
+  }
+  
+  .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+  
+  
+  .mobile-menu{
+      display: block;
+  }
+  
+  
+  
+  }
+  
+
+  .nav-list.active{
+
+    transform: translateX(0);
+}
+
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+
+
